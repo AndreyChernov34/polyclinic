@@ -15,6 +15,14 @@ public class Polyclinic {
     private Doctor seniorSurgeon;
     private Doctor therapist;
 
+    /**
+     * Конструктор Поликлиники
+     * @param cashier           касса
+     * @param dentist           Стоматолог
+     * @param juniorSurgeon     Младший хирург
+     * @param seniorSurgeon     Старший хирург
+     * @param therapist         Терапевт
+     */
     public Polyclinic(Cashier cashier, Doctor dentist, Doctor juniorSurgeon, Doctor seniorSurgeon, Doctor therapist) {
         this.cashier = cashier;
         this.dentist = dentist;
@@ -23,19 +31,31 @@ public class Polyclinic {
         this.therapist = therapist;
     }
 
+    /**
+     * метод лечения Стоматолога
+     */
     public void cureDentist() {
 
         cashier.acceptPayments(dentist.curePeople());
     }
 
+    /**
+     * метод лечения младшего хирурга
+     */
     public void cureJuniorSurgeon() {
         cashier.acceptPayments(juniorSurgeon.curePeople());
     }
 
+    /**
+     * метод лечения старшего хирурга
+     */
     public void cureSeniorSurgeon() {
         cashier.acceptPayments(seniorSurgeon.curePeople());
     }
 
+    /**
+     * метод лечения терапевта
+     */
     public void cureTherapist() {
         cashier.acceptPayments(therapist.curePeople());
     }

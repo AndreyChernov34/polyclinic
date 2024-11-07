@@ -7,16 +7,18 @@ import java.math.BigDecimal;
 
 /**
  * Класс Касса
- * @profit  -доход
  */
 @Component
 @Slf4j
 public class Cashier {
+    /**
+     * Доход
+     */
     private BigDecimal profit = BigDecimal.ZERO;
 
     /**
     *   метод получения оплаты
-     */
+    */
     public void acceptPayments(BigDecimal payment) {
         profit = profit.add(payment);
 

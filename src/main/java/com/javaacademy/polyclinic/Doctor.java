@@ -5,9 +5,7 @@ import java.math.BigDecimal;
 
 
 /**
- * класс Врач
- * @specializtion   - специализация
- * @price           - стоимость приема
+ *  Врач
  */
 @Slf4j
 public class Doctor {
@@ -20,8 +18,9 @@ public class Doctor {
     }
 
     /**
-    *   метод Лечение человека
-    */
+     * метод Лечение человека
+     * @return возвращает стоимость приема
+     */
     public BigDecimal curePeople() {
 
         log.info(specializationEnum.toString() + " вылечил человека");
