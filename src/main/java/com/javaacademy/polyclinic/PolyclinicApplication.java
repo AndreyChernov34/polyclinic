@@ -7,9 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class PolyclinicApplication {
-
 	public static void main(String[] args) {
-
 		ConfigurableApplicationContext context = SpringApplication.run(PolyclinicApplication.class, args);
 		Polyclinic polyclinic = context.getBean(Polyclinic.class);
 		polyclinic.cureDentist();

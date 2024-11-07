@@ -1,5 +1,8 @@
 package com.javaacademy.polyclinic;
 
+/**
+ * Специализация врача
+ */
 public enum SpecializationEnum {
     Dentist("Стоматолог"),
     Surgeon("Хирург"),

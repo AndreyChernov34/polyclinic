@@ -5,18 +5,29 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+/**
+ * Класс Касса
+ * @profit  -доход
+ */
 @Component
 @Slf4j
 public class Cashier {
     private BigDecimal profit = BigDecimal.ZERO;
 
+    /**
+    *   метод получения оплаты
+     */
     public void acceptPayments(BigDecimal payment) {
         profit = profit.add(payment);
 
     }
 
-    public void printProfit(){
-        log.info(String.valueOf(profit));
+    /**
+     *  метод вывода общего дохода
+     */
+    public void printProfit() {
+
+        log.info(String.valueOf("Общий доход в кассе:" + profit));
     }
 
 }
