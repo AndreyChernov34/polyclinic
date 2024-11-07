@@ -1,0 +1,6 @@
+doctor:
+  pricetherapist: 500
+  pricedentist: 1500
+  pricejuniorSurgeon: 700
+  priceseniorSurgeon: 2000
+
