@@ -23,7 +23,8 @@ public class Doctor {
     *   метод Лечение человека
     */
     public BigDecimal curePeople() {
-        log.debug(specializationEnum + "вылечил человека");
+
+        log.info(specializationEnum.toString() + " вылечил человека");
         return price;
     }
 

@@ -13,4 +13,11 @@ public enum SpecializationEnum {
     SpecializationEnum(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "SpecializationEnum{"
+                + "description='" + description + '\''
+                + '}';
+    }
 }

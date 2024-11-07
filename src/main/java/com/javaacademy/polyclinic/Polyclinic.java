@@ -3,6 +3,9 @@ package com.javaacademy.polyclinic;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+/**
+ *Класс Поликлиника
+ */
 @Component
 @Slf4j
 public class Polyclinic {
